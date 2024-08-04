@@ -1,0 +1,106 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <script></script>
+  <link rel="stylesheet" href="./css/style2.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" href="index.html">
+
+    <script>
+const cardImages = document.querySelectorAll(".card-image");
+const cardTitles = document.querySelectorAll(".card-title");
+const cardDescriptions = document.querySelectorAll(".card-description");
+const cardMediaIcons = document.querySelectorAll(".card-mediaIcons a");
+const cardImgs = document.querySelectorAll(".card-image img");
+const cardTitleSpans = document.querySelectorAll(".card-title span");
+const cardDescSpans = document.querySelectorAll(".card-description span");
+const mediaIcons = document.querySelectorAll(".card-mediaIcons a i");
+
+const renderCard = () => {
+  //Remove the skeleton loading effect
+  cardImages.forEach((cardImage) => {
+    cardImage.classList.remove("loading");
+  });
+  cardTitles.forEach((cardTitle) => {
+    cardTitle.classList.remove("loading");
+  });
+  cardDescriptions.forEach((cardDescription) => {
+    cardDescription.classList.remove("loading");
+  });
+  cardMediaIcons.forEach((cardMediaIcon) => {
+    cardMediaIcon.classList.remove("loading");
+  });
+
+  //Show the hidden html elements
+  cardImgs.forEach((cardImg) => {
+    cardImg.style.visibility = "visible";
+  });
+  cardTitleSpans.forEach((cardTitleSpan) => {
+    cardTitleSpan.style.visibility = "visible";
+  });
+  cardDescSpans.forEach((cardDescSpan) => {
+    cardDescSpan.style.visibility = "visible";
+  });
+  mediaIcons.forEach((mediaIcon) => {
+    mediaIcon.style.visibility = "visible";
+  });
+}
+//Execute renderCard on setTimeout
+setTimeout(() => {
+  renderCard();
+}, 1000);
+    </script>
+  </head>
+  
+  <body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About-us</a></li>
+                    <li><a href="contacts-us.html">contact -us </a></li>
+                    <li><a href="exhibution.html">Exhibition</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Creativecorner logo">
+            </a>
+        </div>
+    </header>
+    <br>
+    <!-- -----------------------------------------------company---------------------------------------------------------------- -->
+    <div class="company">
+      <div class="img">
+        <link rel="stylesheet" href="./index.html">
+        <img src="./images/logo.png" ref="./index.html"/>
+      </div>
+      <br>
+      <div class="company-info">
+        <span>PHOTOS <span class="our">FOR EVERYONE</span></span>
+        <p>
+          <b>Creative-corner</b> is a Creative corner art  dedicated for sharing stock photography about Creative-corner under the RWANDA license. Creative-corner allows
+          photographers to upload photos to its website, which are then curated by a team of photo editors. In Creative-corner we are
+          aspiring to be one of the largest photography suppliers on the internet.
+        </p>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+    <br>
+    <br>
+    <!-- ----------------------------------------------------team-------------------------------------------------------------- -->
+    <img src="./images/WhatsApp Image 2024-02-08 at 12.57.32_d915c17f.jpg" alt="">
+    <!-- ----------------------------------------footer------------------------------------------ -->
+    <footer>
+        <h3><b> <u>contact us</u></b></h3>
+        <p>CREATIVE CORNER. RWANDA Musanze TEL:(+250)678499409</p>
+        <p>Creativecorner@gmail.com</p>
+        <p>© 2024 creative corner. All rights reserved.</p>
+    </footer>
+    <!-- ---------------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------------------------------------- -->
+  
+  </html>

@@ -1,0 +1,128 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="shortcut icon" href="images/logo.png" href="index.html">
+
+
+<script type="text/javascript">
+        
+    var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+    slideshows.forEach(initSlideShow);
+    
+    function initSlideShow(slideshow) {
+    
+        var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+    
+        var index = 0, time = 5000;
+        slides[index].classList.add('active');
+    
+        setInterval( () => {
+            slides[index].classList.remove('active');
+            
+            index++;
+            if (index === slides.length) index = 0;
+    
+            slides[index].classList.add('active');
+    
+        }, time);
+    }
+        </script>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contacts-us.html">conctact - us</a></li>
+                    <li><a href="exhibution.html">Exhibition</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <a href="index.html">
+                <img src="./images/logo.png" alt="Creativecorner logo">
+            </a>
+        </div>
+    </header>
+ <br>
+ <br>
+ <div id="slideshow" data-component="slideshow" style="height: 436px;">
+    <div role="list">
+        <div class="slide">
+            <img src="./images/slide1.jpg" alt="" style="width: 100%;">
+        </div>
+        <div class="slide">
+            <img src="./images/slide2.jpg" alt="" width="100%">
+        </div>
+        <div class="slide">
+            <img src="./images/slide3.jpg" alt="" width="100%">
+        </div>
+    </div>
+</div>
+<style>
+[data-component="slideshow"] .slide {
+display: none;
+text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+display: block;
+}
+</style>
+<script type="text/javascript">
+    
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+var index = 0, time = 5000;
+slides[index].classList.add('active');
+
+setInterval( () => {
+    slides[index].classList.remove('active');
+    
+    index++;
+    if (index === slides.length) index = 0;
+
+    slides[index].classList.add('active');
+
+}, time);
+}
+</script>
+
+
+<div class="content">
+    <div class="content-left">
+        <h1><b>EXHIBITION</b></h1>
+        <p>View more of our exhibition</p>
+        <p><sub> now showing</sub></p>
+        <button class="view-details-btn"><a href="exhibution.html">View Details</a> </button>
+    </div>
+    <div class="content-right">
+        <img src="./images/gallery3.jpg" alt="Photo">
+    </div>
+</div>
+<div class="heading-center">
+    <h2><b>Learn more about our
+range of services</b></h2>
+    <button><a href="contacts-us.html" style="color: black;">contact Us</a></button>
+</div>
+
+<footer>
+    <h3><b> <u>contact us</u></b></h3>
+    <p>CREATIVE CORNER. RWANDA Musanze TEL:(+250)678499409</p>
+    <p>Creativecorner@gmail.com</p>
+    <p>© 2024 creative corner. All rights reserved.</p>
+</footer>
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.44299829946!2d29.6306494733023!3d-1.5044430358999707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dc5bd860231a5b%3A0xf94493a27ddbc6c8!2sThe%20Northern%20Creative%20Corner%20%3A%20An%20Initiative%20by%20Image%20Rwanda!5e0!3m2!1sen!2srw!4v1722772070557!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+</body>
+</html> 
